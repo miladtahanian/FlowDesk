@@ -1,0 +1,44 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# IDEs
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info
+dist
+build
+.pytest_cache
+.coverage
+.env
+.env.local
+venv
+env
+ENV
+
+# Testing
+.tox
+htmlcov
+
+# Documentation
+docs/_build
+*.md
+
+# Project specific
+.env.example
+README.md
+CHANGELOG.md
+CONTRIBUTING.md
