@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: mysql:8.0
+    image: mysql
     container_name: flowdesk-mysql
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
@@ -20,7 +20,7 @@ services:
       - flowdesk
 
   redis:
-    image: redis:7-alpine
+    image: redis
     container_name: flowdesk-redis
     ports:
       - "6379:6379"
@@ -35,7 +35,7 @@ services:
       - flowdesk
 
   minio:
-    image: minio/minio:latest
+    image:  elestio/minio
     container_name: flowdesk-minio
     command: server /data --console-address ":9001"
     environment:
